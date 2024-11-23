@@ -13,7 +13,7 @@ const testimonials = [
     role: "CEO, TechCorp",
     content:
       "John is an exceptional developer. His attention to detail and creative problem-solving skills make him stand out.",
-    avatar: "/placeholder.svg?height=100&width=100",
+    avatar: "/avatar.jpg?height=100&width=100",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const testimonials = [
     role: "CTO, InnovateTech",
     content:
       "Working with John was a pleasure. He delivered our project on time and exceeded our expectations.",
-    avatar: "/placeholder.svg?height=100&width=100",
+    avatar: "/avatar.jpg?height=100&width=100",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const testimonials = [
     role: "Product Manager, StartupX",
     content:
       "John's expertise in modern web technologies helped us create a cutting-edge platform. Highly recommended!",
-    avatar: "/placeholder.svg?height=100&width=100",
+    avatar: "/avatar.jpg?height=100&width=100",
   },
 ];
 

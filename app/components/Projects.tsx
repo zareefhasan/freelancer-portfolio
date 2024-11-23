@@ -1,23 +1,23 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
-import Image from 'next/image'
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import Image from "next/image";
 
 const projects = [
-  { id: 1, title: 'Project 1', image: '/placeholder.jpg?height=300&width=400' },
-  { id: 2, title: 'Project 2', image: '/placeholder.jpg?height=300&width=400' },
-  { id: 3, title: 'Project 3', image: '/placeholder.jpg?height=300&width=400' },
-  { id: 4, title: 'Project 4', image: '/placeholder.jpg?height=300&width=400' },
-  { id: 5, title: 'Project 5', image: '/placeholder.jpg?height=300&width=400' },
-  { id: 6, title: 'Project 6', image: '/placeholder.jpg?height=300&width=400' },
-]
+  { id: 1, title: "Project 1", image: "/placeholder.jpg?height=300&width=400" },
+  { id: 2, title: "Project 2", image: "/placeholder.jpg?height=300&width=400" },
+  { id: 3, title: "Project 3", image: "/placeholder.jpg?height=300&width=400" },
+  { id: 4, title: "Project 4", image: "/placeholder.jpg?height=300&width=400" },
+  { id: 5, title: "Project 5", image: "/placeholder.jpg?height=300&width=400" },
+  { id: 6, title: "Project 6", image: "/placeholder.jpg?height=300&width=400" },
+];
 
 const Projects = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
-  })
+  });
 
   return (
     <section id="projects" ref={ref} className="py-20 bg-gray-100">
@@ -47,13 +47,18 @@ const Projects = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
               </div>
+              <a
+                href="#"
+                className="bg-orange-500 text-white py-2 px-4 block text-center cursor-pointer hover:bg-orange-600"
+              >
+                Live Link
+              </a>
             </motion.div>
           ))}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Projects
-
+export default Projects;

@@ -73,7 +73,7 @@ const Contact = () => {
             </motion.div>
             <motion.button
               type="submit"
-              className="bg-primary text-white px-6 py-3 rounded-md font-semibold hover:bg-primary-dark transition-colors"
+              className="bg-orange-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-orange-600 transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -112,7 +112,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 export default Contact
