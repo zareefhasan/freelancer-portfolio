@@ -1,8 +1,8 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { ArrowUpRight } from 'lucide-react'
-import Link from 'next/link'
+import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -13,14 +13,14 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <motion.h1 
+        <motion.h1
           className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          Hello <span className="inline-block animate-wave">👋</span> i'm available for{' '}
-          <br className="hidden sm:block" />
+          Hello <span className="inline-block animate-wave">👋</span> i&aposm
+          available for <br className="hidden sm:block" />
           freelance work
         </motion.h1>
 
@@ -31,9 +31,9 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           <p className="text-xl text-gray-600">
-            For quick response:{' '}
-            <Link 
-              href="skype:your.id?chat" 
+            For quick response:{" "}
+            <Link
+              href="skype:your.id?chat"
               className="relative inline-flex items-center gap-1 text-gray-900 font-medium group"
             >
               <span className="relative">
@@ -59,6 +59,5 @@ export default function Hero() {
         </motion.div>
       </motion.div>
     </section>
-  )
+  );
 }
-
