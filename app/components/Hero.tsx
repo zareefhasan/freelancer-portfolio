@@ -19,7 +19,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          Hello <span className="inline-block animate-wave">👋</span> i&aposm
+          Hello <span className="inline-block animate-wave">👋</span> i&apos;m
           available for <br className="hidden sm:block" />
           freelance work
         </motion.h1>
